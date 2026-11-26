@@ -1,0 +1,513 @@
+
+/* =========================
+   GENERAL SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f8edda;
+    color: #173d20;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.about-header {
+    background: #12351e;
+}
+
+.navbar {
+    width: 100%;
+    padding: 22px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #fff4df;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo-symbol {
+    color: #efa83b;
+    font-size: 35px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.nav-links a {
+    color: #fff8eb;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #f5b34f;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 3px;
+    background: white;
+}
+
+
+/* =========================
+   ABOUT HERO
+========================= */
+
+.about-hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 75px 8%;
+
+    background-color: #0c2712;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(12, 39, 18, 0.94) 0%,
+            rgba(12, 39, 18, 0.80) 45%,
+            rgba(12, 39, 18, 0.42) 100%
+        ),
+        url("Igbo3.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-hero-content {
+    max-width: 720px;
+    color: #fff8eb;
+}
+
+.eyebrow {
+    color: #f5b34f;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 17px;
+}
+
+.about-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(45px, 6vw, 72px);
+    margin-bottom: 15px;
+}
+
+.about-hero h1 span {
+    color: #f49a32;
+}
+
+.about-hero h2 {
+    font-size: clamp(20px, 2.5vw, 28px);
+    margin-bottom: 15px;
+}
+
+.about-hero-content > p:not(.eyebrow) {
+    max-width: 580px;
+    line-height: 1.8;
+    color: #eee5d7;
+}
+
+
+/* =========================
+   WHO WE ARE
+========================= */
+
+.about-section {
+    padding: 85px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #173d20;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: 15px;
+    line-height: 2;
+    color: #655a47;
+    margin-bottom: 18px;
+}
+
+.about-highlight {
+    background: #173d20;
+    color: #fff8eb;
+    border-radius: 18px;
+    padding: 40px;
+    text-align: center;
+}
+
+.highlight-symbol {
+    color: #f5b34f;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.about-highlight h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.about-highlight p {
+    color: #e9ddc8;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 18px;
+}
+
+
+/* =========================
+   MISSION AND VISION
+========================= */
+
+.purpose-section {
+    background: #eee2ca;
+    padding: 75px 8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.purpose-card {
+    background: #fff9ed;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.purpose-icon {
+    font-size: 40px;
+    color: #e68a25;
+    margin-bottom: 15px;
+}
+
+.purpose-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.purpose-card p {
+    color: #655a47;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+
+/* =========================
+   WHY IGBOOLINGO
+========================= */
+
+.why-section {
+    padding: 85px 7%;
+}
+
+.section-description {
+    color: #76674e;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    background: #fff9ed;
+    border: 1px solid #eadcc4;
+    padding: 28px 20px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(50, 40, 20, 0.08);
+}
+
+.why-icon {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.why-card h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: #173d20;
+}
+
+.why-card p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #76674e;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #102d19;
+    color: #fff4df;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #f5b34f;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #d7cbb7;
+    margin-top: 10px;
+}
+
+.footer .copyright {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #a99c87;
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 900px) {
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section,
+    .why-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 17px 5%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .logo-symbol {
+        font-size: 30px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        right: 5%;
+        padding: 22px;
+        border-radius: 12px;
+        background: #173d20;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        z-index: 101;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    .about-hero {
+        min-height: 420px;
+        padding: 55px 6%;
+        background-position: center;
+    }
+
+    .about-hero h1 {
+        font-size: 46px;
+    }
+
+    .about-hero h2 {
+        font-size: 20px;
+    }
+
+    .about-hero-content > p:not(.eyebrow) {
+        font-size: 14px;
+    }
+
+    .about-section {
+        padding: 60px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 31px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-highlight {
+        padding: 30px 20px;
+    }
+
+    .purpose-section {
+        grid-template-columns: 1fr;
+        padding: 55px 6%;
+        gap: 20px;
+    }
+
+    .purpose-card {
+        padding: 30px 22px;
+    }
+
+    .why-section {
+        padding: 60px 5%;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .why-card {
+        padding: 22px 15px;
+    }
+
+    .why-card h3 {
+        font-size: 15px;
+    }
+
+    .why-card p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 375px) {
+
+    .about-hero h1 {
+        font-size: 40px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .purpose-card {
+        padding: 25px 18px;
+    }
+
+}
+.back-home-button {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    margin-top: 25px;
+    padding: 13px 25px;
+    border: 1px solid #f5b34f;
+    border-radius: 30px;
+    color: #fff8eb;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.back-home-button:hover {
+    background: #f47720;
+    border-color: #f47720;
+    transform: translateY(-3px);
+}

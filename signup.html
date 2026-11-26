@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join Igbolingo</title>
+
+    <link rel="stylesheet" href="signup.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="signup-container">
+
+        <section class="signup-card">
+
+            <a href="index.html" class="logo">
+                <span>✦</span> Igbolingo
+            </a>
+
+            <div class="signup-heading">
+                <span class="eyebrow">WELCOME TO IGBOOLINGO</span>
+
+                <h1>Your Igbo Journey Starts Here.</h1>
+
+                <p>
+                    Create an account and begin connecting
+                    with your roots.
+                </p>
+            </div>
+
+
+            <!-- AUTHENTICATION TABS -->
+
+            <div class="auth-tabs">
+                <button class="auth-tab active" type="button">
+                    Create Account
+                </button>
+
+                <button class="auth-tab" type="button">
+                    Sign In
+                </button>
+            </div>
+
+
+            <!-- SIGNUP FORM -->
+
+            <form class="auth-form">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Choose a username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <div class="email-label">
+    <label for="email">Email</label>
+
+    <span class="email-info">
+        ⓘ
+        <span class="email-tooltip">
+            Please use an email address you intend to keep.
+            Changing your email address is not currently available
+            in Igbolingo.
+        </span>
+    </span>
+</div>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+<div class="form-group">
+    <label for="learning-goal">
+        What is your main goal for using Igbolingo?
+    </label>
+
+    <select id="learning-goal" required>
+        <option value="" disabled selected>
+            Select your learning goal
+        </option>
+
+        <option value="speaking">Learn to speak Igbo</option>
+        <option value="understanding">Understand Igbo conversations</option>
+        <option value="reading-writing">Improve my reading and writing</option>
+        <option value="culture">Explore Igbo culture and traditions</option>
+        <option value="roots">Reconnect with my roots</option>
+        <option value="travel">Learn Igbo for travel or communication</option>
+        <option value="other">Other</option>
+    </select>
+</div>
+                <div class="form-group">
+    <label for="password">Password</label>
+
+    <div class="password-wrapper">
+        <input
+            type="password"
+            id="password"
+            placeholder="Create a password"
+            required
+        >
+
+        <button type="button" class="toggle-password" data-target="password" aria-label="Show password">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/>
+                <circle cx="12" cy="12" r="3"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="confirm-password">Confirm Password</label>
+
+    <div class="password-wrapper">
+        <input
+            type="password"
+            id="confirm-password"
+            placeholder="Enter your password again"
+            required
+        >
+
+        <button type="button" class="toggle-password" data-target="confirm-password" aria-label="Show password">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/>
+                <circle cx="12" cy="12" r="3"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+                <button type="submit" class="submit-button">
+                    Create My Account
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="#" class="switch-link">Sign In</a>
+            </p>
+
+            <a href="index.html" class="back-home">
+                ← Back to Home
+            </a>
+
+        </section>
+
+    </main>
+<script type="module" src="signup.js"></script>
+</body>
+</html>
